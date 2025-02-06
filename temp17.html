@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showData(){
+            let name = document.getElementById("name").value
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+            let dob = document.getElementById("dob").value
+        data.innerHTML = `${name} ,${email}, ${password},${dob}`
+        }
+    </script>
+</head>
+<body>
+    <h1>NEW User Signup Form</h1>
+    <p><input type="text" id="name" placeholder="name"></p>
+    <p><input type="text" id="email" placeholder="email Address"></p>
+    <p><input type="password" id="password" placeholder="password"></p>
+    <p><input type="date" id="dob" placeholder="dob"></p>
+    <button onclick="showData()">Register</button>
+    <div id="data"></div>
+
+</body>
+</html>
